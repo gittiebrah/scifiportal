@@ -43,15 +43,31 @@ nav a:hover{color:#7df9ff}
 
 .hero h1{font-size:3rem;margin-bottom:16px;color:#9bbcff;text-shadow:0 0 20px rgba(120,160,255,.8)}
 
-.glow-btn{
-  padding:12px 28px;
-  border:none;
-  border-radius:999px;
-  background:linear-gradient(90deg,#00eaff,#7b61ff);
-  color:white;
-  cursor:pointer;
-  box-shadow:0 0 20px rgba(0,234,255,.6);
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+  padding:40px;
 }
 
-footer{text-align:center;padding:16px;border-top:1px solid rgba(120,160,255,.2);font-size:.8rem;opacity:.6}
+.card{
+  background:rgba(15,22,60,0.6);
+  border:1px solid rgba(120,160,255,0.25);
+  border-radius:18px;
+  padding:22px;
+  backdrop-filter:blur(12px);
+  transition:.25s;
+  position:relative;
+}
+
+.card:hover{
+  transform:translateY(-6px) scale(1.02);
+  border-color:#00eaff;
+  box-shadow:0 0 25px rgba(0,234,255,.35);
+}
+
+/* NEW futuristic buttons */
+.ai-btn{
+  display:inline-block;
+  margin-top:14px;
 </style>
